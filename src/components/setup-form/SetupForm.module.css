@@ -1,0 +1,75 @@
+.quiz {
+    width: 95vw;
+    max-width:1170px;
+    margin: 4rem auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.quiz-small {
+    max-width: 700px;
+}
+
+.logo-img {
+    margin-left: 25px; 
+}
+
+.setup-form h2 {
+    margin-bottom: 3.5rem;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    color: rgba(66, 66, 66, 0.9);
+    text-shadow: 2px 2px rgb(32, 10, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+.form-control {
+    margin-bottom: 1rem ;
+   
+}
+
+.form-control label {
+    display: block;
+    font-weight: 900;
+    margin: 10px 0;
+    color: rgb(66, 66, 66);
+}
+
+.form-input {
+    border: none;
+    background:rgb(200, 188, 188);
+    font-size: 1rem;
+    padding: 4px 8px;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.error {
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.submit-btn {
+        width: 100%;
+        border-radius: 5px;
+        border-color: transparent;
+        padding: 6px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+        background: rgb(37, 155, 37);
+        color: rgba(0, 0, 0, 0.888);
+        transition: all 0.2s linear;
+        cursor: pointer;
+}
+
+.submit-btn:hover{
+    color: white;
+}
