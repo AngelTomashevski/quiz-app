@@ -49,25 +49,25 @@ const quizSlice = createSlice({
       state.isSetupFormOpen = false;
     },
     [getQuestions.fulfilled]: (state, action) => {
-      if (action.payload.length > 0) {
-        state.isLoading = false;
-        state.questions = action.payload;
-        state.error = false;
-        state.isSetupFormOpen = false;
-      } else {
-        state.isSetupFormOpen = true;
-        state.error = true;
-        state.isLoading = false;
-      }
+      state.isLoading = false;
+      state.isSetupFormOpen = false;
+      state.questions = action.payload;
+      state.error = false;
     },
-    [getQuestions.rejected]: (state) => {
+    [getQuestions.rejected]: (state, action) => {
+      state.isSetupFormOpen = true;
       state.error = true;
       state.isLoading = false;
     },
   },
 });
 
-export const { nextQuestion, prevQuestion, closeModal, checkAnswers } =
-  quizSlice.actions;
+export const {
+  nextQuestion,
+  prevQuestion,
+  closeModal,
+  checkAnswers,
+  cleanSetupForm,
+} = quizSlice.actions;
 
 export default quizSlice.reducer;

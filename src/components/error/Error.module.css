@@ -1,0 +1,21 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+    color: white;
+}
+
+
+.error h2 {
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 10px;
+}
+
+
+
+.link {
+    color: rgba(255, 255, 255, 0.899);
+}

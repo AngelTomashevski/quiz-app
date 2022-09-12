@@ -1,0 +1,153 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 95vw;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(71, 70, 70);
+    padding: 1.5rem;
+}
+
+.main {
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px rgb(99, 3, 3);
+    border-bottom: 7px solid rgb(99, 3, 3);
+}
+
+.copy-text {
+    color: rgb(64, 64, 64);
+    margin: 20px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.skills {
+    font-size: 2.5rem;
+    border-bottom: 5px solid rgb(24, 140, 179);
+
+}
+
+.main-li {
+    font-size: 1.7rem;
+    font-weight: 500;
+    list-style-type: disc;
+    margin: 20px 0;
+    color: blue;
+}
+
+.inline-li {
+    display: flex;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+    gap: 7px;
+    text-align: center;
+}
+
+.contact {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(71, 70, 70);
+    margin-top: 20px;
+    border-bottom: 5px solid rgb(24, 140, 179);
+}
+
+.contact-links {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+@media screen and (min-width: 894px) {
+    .about {
+        height: 85vh;
+        font-size: 0.5rem;
+        padding: 1rem;
+        margin: 10px;
+
+    }
+
+    .main {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+
+         .skills {
+             font-size: 2rem;
+         }
+    
+         .contact {
+             font-size: 2rem;
+         }
+
+}
+
+
+
+@media screen and (max-width: 895px) {
+    .about {
+        height: 85vh;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .main {
+        margin-bottom: 5px;
+        letter-spacing: 0.5px;
+        font-size: 2rem;
+    }
+
+        .skills {
+            font-size: 1.3rem;
+        }
+    
+        .contact {
+            font-size: 1.3rem;
+        }
+
+    
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .about {
+        height: 85vh;
+        font-size: 0.5rem;
+        padding: 10px;
+        margin: 5px;
+        
+    }
+
+    .main {
+        margin-bottom: 1px;
+        font-size: 2rem;
+    }
+
+    .skills {
+        font-size: 1rem;
+    }
+    .contact {
+        font-size: 1rem;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+}

@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   quizOptions: {
-    amount: 5,
+    limit: 5,
     category: "sports",
-    difficulty: "easy",
+    difficulty: "medium",
   },
 };
 

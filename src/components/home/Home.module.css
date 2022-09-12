@@ -1,0 +1,102 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 95vw;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(99, 99, 99);
+    padding: 1.5rem;
+}
+
+.main {
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px rgb(99, 3, 3);
+}
+
+.text {
+    line-height: 1rem;
+    padding: 10px 0;
+
+}
+
+.link {
+    color: black;
+    font-weight: 700;
+}
+.description {
+    color: rgb(64, 64, 64);
+    margin-top: 20px;
+    font-size: 1.5rem;
+        color: rgb(12, 60, 12);
+}
+
+.copy-text {
+    color: rgb(64, 64, 64);
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: rgb(108, 6, 6);
+}
+.starter-btn {
+        border-radius: 5px;
+        border-color: transparent;
+        padding: 6px;
+        display: block;
+        width: 25%;
+        height: 15%;
+        margin: 40px;
+        font-weight: 600;
+        font-size: 1rem;
+        background: rgb(37, 155, 37);
+        color: black;
+        transition: all 0.2s linear;
+        cursor: pointer;
+}
+
+.starter-btn:hover {
+    color:white;
+}
+
+
+@media screen and (max-width: 856px) {
+    .home {
+        height: 80vh;
+        font-size: 1rem;
+        padding: 25px;
+    }
+
+    .main {
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .starter-btn {
+        height: 5vh;
+        width: 30%;
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 560px) {
+    .home {
+        height: 85vh;
+        font-size: 0.5rem;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .copy-text {
+        display: none;
+    }
+
+    .starter-btn {
+        height: 5vh;
+        width: 40%;
+    }
+}

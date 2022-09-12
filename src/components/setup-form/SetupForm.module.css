@@ -11,8 +11,16 @@
     max-width: 700px;
 }
 
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
 .logo-img {
-    margin-left: 25px; 
+    margin-left: 1rem; 
+    margin-top: 18px;
 }
 
 .setup-form h2 {
@@ -73,3 +81,4 @@
 .submit-btn:hover{
     color: white;
 }
+
