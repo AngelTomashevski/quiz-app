@@ -23,6 +23,31 @@ const AnswersList = () => {
 
   // const answers = [...incorrect_answers, correct_answer];
 
+//   const objectAnswer = {id, completeAnswers:answers}
+// 2
+//   const answerId = Object.values(objectAnswer.id)
+
+//            console.log(answerId)
+
+  // const renderAnswers = (arr) => {
+  //   arr.forEach(element => {
+  //             const id = element.id;
+  //             const newAnswers = element.fnalAnswers;
+  //             newAnswers.map((answer,index) => {
+  //               return  <button
+  //                 key={id}
+  //                 className={classes["answer-btn"]}
+  //                 onClick={() =>
+  //                   correlation(correctAnswer === answer)}>
+  //                     {(index +1)  + ") " + answer}
+  //                     </button>
+  //           })
+
+  //           return arr;
+  //             })
+  // }
+
+
   const correlation = (condition) => {
     dispatch(checkAnswers(condition))
   }
@@ -31,23 +56,20 @@ const AnswersList = () => {
      <article className={classes.container}>
           <h2>{"Question " + (index + 1) + ": " + question}</h2>
           <div className={classes["btn-container"]}>
-              {answers?.map((answer, index) => {
+            {answers.map((answer,index)=>{
+              const {id} = questions[index]
               return (
                 <button
-                  key={index}
+                  key={id}
                   className={classes["answer-btn"]}
                   onClick={() =>
                     correlation(correctAnswer === answer)}>
                       {(index +1)  + ") " + answer}
                       </button>
-             
                  )
-                }
-              )
+              })
             }
           </div>
-
-           
         </article>
   )
 

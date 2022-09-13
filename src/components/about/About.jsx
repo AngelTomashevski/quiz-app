@@ -16,11 +16,11 @@ const About = () => {
             <li>FrontEnd:</li>
         </ul>
         <ul className={classes["inline-li"]}>
-            <li>HTML <i class="fa-brands fa-html5"></i>,</li>
-            <li>CSS <i class="fa-brands fa-css3-alt"></i>,</li>
-            <li>Javascript <i class="fa-brands fa-js"></i>,</li>
-            <li>GIT <i class="fa-brands fa-square-git"></i>,</li>
-            <li>React <i class="fa-brands fa-react"></i>,</li>
+            <li>HTML <i className="fa-brands fa-html5"></i>,</li>
+            <li>CSS <i className="fa-brands fa-css3-alt"></i>,</li>
+            <li>Javascript <i className="fa-brands fa-js"></i>,</li>
+            <li>GIT <i className="fa-brands fa-square-git"></i>,</li>
+            <li>React <i className="fa-brands fa-react"></i>,</li>
             <li>Redux</li>
         </ul>
         
