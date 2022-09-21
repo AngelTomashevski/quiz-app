@@ -40,7 +40,7 @@ const handleSubmit = (e) => {
           <h2 className={classes.text}>QUIZ by <span className={classes["logo-img"]}><img src={Logo} alt="Logo-quiz" /></span></h2>
            {error && (
                   <p className={classes.error}>
-                    Can't generate questions, something went wrong!
+                    Can't generate questions, something went wrong! Please try again!
                   </p>
                 )}
             

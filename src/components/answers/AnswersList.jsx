@@ -21,33 +21,6 @@ const AnswersList = () => {
     answers[tempIndex] = correctAnswer;
   }
 
-  // const answers = [...incorrect_answers, correct_answer];
-
-//   const objectAnswer = {id, completeAnswers:answers}
-// 2
-//   const answerId = Object.values(objectAnswer.id)
-
-//            console.log(answerId)
-
-  // const renderAnswers = (arr) => {
-  //   arr.forEach(element => {
-  //             const id = element.id;
-  //             const newAnswers = element.fnalAnswers;
-  //             newAnswers.map((answer,index) => {
-  //               return  <button
-  //                 key={id}
-  //                 className={classes["answer-btn"]}
-  //                 onClick={() =>
-  //                   correlation(correctAnswer === answer)}>
-  //                     {(index +1)  + ") " + answer}
-  //                     </button>
-  //           })
-
-  //           return arr;
-  //             })
-  // }
-
-
   const correlation = (condition) => {
     dispatch(checkAnswers(condition))
   }

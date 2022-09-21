@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from "./DisplaySection.module.css"
+import classes from "./DisplayAnswersSection.module.css"
 import AnswersList from '../answers/AnswersList'
 import DisplayCorrectAnswers from '../display-correctAnswers/DisplayCorrectAnswers'
 import Button from '../UI/button/Button'
@@ -7,7 +7,7 @@ import { nextQuestion } from '../../feature/quizSlice'
 import { useDispatch } from 'react-redux'
 
 const DisplaySection = () => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
   return (
      <section className={classes["initial-container"]}>
                 <DisplayCorrectAnswers />

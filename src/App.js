@@ -11,7 +11,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Error from "./components/error/Error";
-import DisplaySection from "./components/display-answer-section/DisplaySection";
+import DisplayAnswersSection from "./components/display-answer-section/DisplayAnswersSection";
 
 function App() {
   const { isLoading, questions, isModalOpen, error } = useSelector(
@@ -37,7 +37,7 @@ function App() {
         <Route path="/quiz" element={<SetupForm />} />
         <Route path="/about" element={<About />} />
         {questions.length > 0 && !error && (
-          <Route path="/answers" element={<DisplaySection />} />
+          <Route path="/answers" element={<DisplayAnswersSection />} />
         )}
         <Route path="*" element={<Error />} />
       </Routes>

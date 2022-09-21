@@ -78,6 +78,7 @@ p {
     line-height: 1;
   }
 }
+
 .main {
   min-height: 100vh;
   display: flex;
