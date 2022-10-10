@@ -1,104 +1,96 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    width: 95vw;
-    background-color: white;
-    border-radius: 10px;
-    color: rgb(99, 99, 99);
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 95vw;
+  border-radius: 10px;
+  color: rgb(41, 41, 41);
+  padding: 1.5rem;
 }
 
 .main {
-    letter-spacing: 2px;
-    margin: 30px 0;
-    text-shadow: 2px 2px rgb(99, 3, 3);
+  letter-spacing: 2px;
+  margin: 30px 0;
+  text-shadow: 2px 2px rgb(40, 0, 0);
 }
 
 .text {
-    line-height: 1rem;
-    padding: 10px 0;
-
+  line-height: 1rem;
+  padding: 10px 0;
 }
 
 .link {
-    color: black;
-    font-weight: 700;
+  color: rgb(6, 6, 6);
+  font-weight: 700;
 }
 .description {
-    color: rgb(64, 64, 64);
-    margin-top: 20px;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(12, 60, 12);
+  color: rgb(39, 39, 39);
+  margin-top: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(8, 48, 8);
 }
 
 .copy-text {
-    color: rgb(64, 64, 64);
-        margin-top: 20px;
-        font-size: 1.2rem;
-        color: rgb(108, 6, 6);
+  color: rgb(64, 64, 64);
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: rgba(28, 0, 0, 0.858);
 }
 .starter-btn {
-        border-radius: 5px;
-        border-color: transparent;
-        padding: 6px;
-        display: block;
-        width: 25%;
-        height: 15%;
-        margin: 40px;
-        font-weight: 600;
-        font-size: 1rem;
-        background: rgb(37, 155, 37);
-        color: black;
-        transition: all 0.2s linear;
-        cursor: pointer;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 6px;
+  display: block;
+  width: 25%;
+  height: 15%;
+  margin: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: rgb(37, 155, 37);
+  color: black;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 
 .starter-btn:hover {
-    color:white;
+  color: white;
 }
-
 
 @media screen and (max-width: 856px) {
-    .home {
-        height: 80vh;
-        font-size: 1rem;
-        padding: 25px;
-    }
+  .home {
+    height: 80vh;
+    font-size: 1rem;
+    padding: 25px;
+  }
 
-    .main {
-        margin-bottom: 10px;
-        letter-spacing: 0.5px;
-    }
+  .main {
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
 
-    .starter-btn {
-        height: 7vh;
-        width: 40%;
-        margin: 15px;
-    }
+  .starter-btn {
+    height: 7vh;
+    width: 40%;
+    margin: 15px;
+  }
 }
 
-
-
-
-
-
 @media screen and (max-width: 580px) {
-    .home {
-        height: 85vh;
-        font-size: 0.5rem;
-        padding: 20px;
-        margin: 20px;
-    }
+  .home {
+    height: 85vh;
+    font-size: 0.5rem;
+    padding: 20px;
+    margin: 20px;
+  }
 
-    .copy-text {
-        display: none;
-    }
+  .copy-text {
+    display: none;
+  }
 
-    .starter-btn {
-        height: 5vh;
-        width: 50%;
-    }
+  .starter-btn {
+    height: 5vh;
+    width: 50%;
+  }
 }
